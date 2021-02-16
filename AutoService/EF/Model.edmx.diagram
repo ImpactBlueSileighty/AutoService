@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dd28360585554bcca19767806120fd7a" Name="Diagram1">
+        <EntityTypeShape EntityType="ewbdModel.Client" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.ClientService" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.DocumentByService" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.Gender" Width="1.5" PointX="1.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.Manufacturer" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.Product" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.ProductPhoto" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.ProductSale" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.Service" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.ServicePhoto" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ewbdModel.Tag" Width="1.5" PointX="3" PointY="19.75" IsExpanded="true" />
+        <AssociationConnector Association="ewbdModel.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.FK_ClientService_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.FK_ClientService_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.FK_DocumentByService_ClientService" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.FK_Product_Manufacturer" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.FK_ProductPhoto_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.FK_ServicePhoto_Service" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.AttachedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="ewbdModel.TagOfClient" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ewbdModel.sysdiagrams" Width="1.5" PointX="7.375" PointY="0.75" />
+        <AssociationConnector Association="ewbdModel.FK_ProductSale_ClientService" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
